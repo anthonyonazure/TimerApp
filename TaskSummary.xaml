@@ -1,0 +1,18 @@
+<UserControl x:Class="TimeTrackerApp.TaskSummary"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StackPanel Background="White" Margin="10">
+        <TextBlock Text="Task Summary" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+        <TextBlock x:Name="TotalTasksTextBlock" Margin="0,0,0,5"/>
+        <TextBlock x:Name="TotalTimeTextBlock" Margin="0,0,0,5"/>
+        <TextBlock x:Name="AverageTimeTextBlock" Margin="0,0,0,5"/>
+        <TextBlock Text="Top 5 Tasks by Time:" FontWeight="Bold" Margin="0,10,0,5"/>
+        <ItemsControl x:Name="TopTasksItemsControl">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" Margin="0,0,0,5"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </StackPanel>
+</UserControl>
