@@ -13,6 +13,7 @@
   <ItemGroup>
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="EPPlus" Version="6.2.6" />
   </ItemGroup>
 
   <Target Name="CleanGeneratedFiles" BeforeTargets="Clean">

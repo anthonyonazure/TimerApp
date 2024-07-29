@@ -3,8 +3,20 @@ C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Timer App v1.runtimeconfig.json
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Timer App v1.dll
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Timer App v1.pdb
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\EPPlus.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\EPPlus.Interfaces.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\EPPlus.System.Drawing.dll
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\LiveCharts.dll
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer App v1.csproj.AssemblyReference.cache
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\TaskPieChart.baml
@@ -20,6 +32,7 @@ C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer App v1.g.resources
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer App v1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer App v1.csproj.CoreCompileInputs.cache
+C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer App v1.sourcelink.json
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer Ap.40E4A10C.Up2Date
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\Timer App v1.dll
 C:\Users\antho\OneDrive - AnthonyOnAzure\PowerShell Script Library\Timer App v1\obj\Debug\net8.0-windows\refint\Timer App v1.dll

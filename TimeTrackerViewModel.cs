@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
+using OfficeOpenXml; 
+using System.Linq; 
 
 namespace TimeTrackerApp
 {
@@ -27,6 +29,38 @@ namespace TimeTrackerApp
             });
         }
 
+        public void ExportToExcel(string filePath)
+        {
+            ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            using (var package = new ExcelPackage())
+            {
+                var worksheet = package.Workbook.Worksheets.Add("Tasks");
+
+                // Add headers
+                worksheet.Cells[1, 1].Value = "Name";
+                worksheet.Cells[1, 2].Value = "Category";
+                worksheet.Cells[1, 3].Value = "Description";
+                worksheet.Cells[1, 4].Value = "Elapsed Time";
+                worksheet.Cells[1, 5].Value = "Status";
+
+                // Add data
+                for (int i = 0; i < Tasks.Count; i++)
+                {
+                    worksheet.Cells[i + 2, 1].Value = Tasks[i].Name;
+                    worksheet.Cells[i + 2, 2].Value = Tasks[i].Category;
+                    worksheet.Cells[i + 2, 3].Value = Tasks[i].Description;
+                    worksheet.Cells[i + 2, 4].Value = Tasks[i].ElapsedTime.ToString();
+                    worksheet.Cells[i + 2, 5].Value = Tasks[i].Status;
+                }
+
+                // Auto-fit columns
+                worksheet.Cells[worksheet.Dimension.Address].AutoFitColumns();
+
+                // Save the file
+                File.WriteAllBytes(filePath, package.GetAsByteArray());
+            }
+        }
         public void StartTask(TaskItem task)
         {
             if (task != null)
