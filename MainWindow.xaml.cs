@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using System.Collections.Generic;
+using Microsoft.Win32;
 
 namespace TimeTrackerApp
 {
@@ -33,6 +34,28 @@ namespace TimeTrackerApp
             CategoryComboBox.ItemsSource = categories;
         }
 
+        private void ExportToExcel_Click(object sender, RoutedEventArgs e)
+        {
+            var saveFileDialog = new SaveFileDialog
+            {
+                Filter = "Excel Files (*.xlsx)|*.xlsx",
+                DefaultExt = "xlsx",
+                FileName = "TaskExport.xlsx"
+            };
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                try
+                {
+                    viewModel.ExportToExcel(saveFileDialog.FileName);
+                    MessageBox.Show("Data exported successfully!", "Export Confirmation", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error exporting data: {ex.Message}", "Export Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
         private void Timer_Tick(object? sender, EventArgs e)
         {
             viewModel.UpdateElapsedTimes();
