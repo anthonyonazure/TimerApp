@@ -18,7 +18,7 @@ jobs:
     name: .NET / Aspire (C#/F#)
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-dotnet@v4
         with: { dotnet-version: '9.0.x' }
       - run: dotnet restore
@@ -34,7 +34,7 @@ jobs:
     container:
       image: zricethezav/gitleaks:latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with: { fetch-depth: 0 }
       # gitleaks CLI is license-free; the gitleaks-action wrapper is NOT (it requires
       # a paid GITLEAKS_LICENSE on org accounts). Run the binary directly to avoid that.
@@ -43,7 +43,7 @@ jobs:
     name: dependency CVEs (osv-scanner)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: scan lockfiles for known vulnerabilities
         run: |
           curl -sSfL -o osv-scanner \
@@ -67,7 +67,7 @@ jobs:
     name: licence policy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: inventory dependency licences
         run: |
           curl -sSfL -o osv-scanner \
@@ -101,7 +101,7 @@ jobs:
     container:
       image: semgrep/semgrep:latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: advisory scan (all severities, never blocks)
         run: |
           semgrep scan --config=p/default --metrics=off --no-error \
