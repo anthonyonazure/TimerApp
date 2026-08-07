@@ -4,8 +4,8 @@ using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
-using OfficeOpenXml; 
-using System.Linq; 
+using OfficeOpenXml;
+using System.Linq;
 
 namespace TimeTrackerApp
 {
@@ -20,8 +20,8 @@ namespace TimeTrackerApp
 
         public void AddTask(string name, string category, string description)
         {
-            Tasks.Add(new TaskItem 
-            { 
+            Tasks.Add(new TaskItem
+            {
                 Name = name,
                 Category = category,
                 Description = description,
