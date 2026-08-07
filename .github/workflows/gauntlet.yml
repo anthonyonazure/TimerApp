@@ -22,7 +22,10 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with: { dotnet-version: '9.0.x' }
       - run: dotnet restore
-      - run: dotnet format --verify-no-changes
+      # The solution and the project sit in the same directory. restore, build and test
+      # all resolve that to the solution on their own, but dotnet format refuses to guess
+      # and aborts before checking anything, so it gets told explicitly.
+      - run: dotnet format "Timer App v1.sln" --verify-no-changes
       - run: dotnet build --no-restore -warnaserror
       - run: dotnet test --no-build --verbosity normal
   secrets:

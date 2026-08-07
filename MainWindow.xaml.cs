@@ -17,7 +17,7 @@ namespace TimeTrackerApp
         public MainWindow()
         {
             InitializeComponent();
-            
+
             viewModel = new TimeTrackerViewModel();
             DataContext = viewModel;
             TaskListView.ItemsSource = viewModel.Tasks;
@@ -59,7 +59,7 @@ namespace TimeTrackerApp
         private void Timer_Tick(object? sender, EventArgs e)
         {
             viewModel.UpdateElapsedTimes();
-            
+
             if ((DateTime.Now - lastChartUpdateTime).TotalSeconds >= ChartUpdateIntervalSeconds)
             {
                 RefreshChart();

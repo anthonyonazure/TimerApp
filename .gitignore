@@ -1,0 +1,8 @@
+# Build output and IDE state. These were committed before this file existed, which is
+# why the dependency gate kept reporting CVEs against a stale deps.json in bin/ that no
+# longer matched anything the project actually declares.
+bin/
+obj/
+.vs/
+*.user
+*.suo
