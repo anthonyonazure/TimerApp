@@ -2,7 +2,7 @@
 # Quality gauntlet — blocks the commit if any gate fails. Your gate when there is no CI.
 set -e
 echo "· gauntlet: stack check"
-dotnet format --verify-no-changes
+dotnet format 'Timer App v1.sln' --verify-no-changes
 echo "· gauntlet: secret scan"
 if command -v gitleaks >/dev/null 2>&1; then
   gitleaks protect --staged --redact --no-banner
