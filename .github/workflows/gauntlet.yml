@@ -29,6 +29,7 @@ jobs:
         with: { dotnet-version: '9.0.x' }
       - run: dotnet restore 'Timer App v1.sln'
       - name: format
+        shell: bash
         run: |
           set +e
           out=$(dotnet format 'Timer App v1.sln' --verify-no-changes 2>&1); code=$?
